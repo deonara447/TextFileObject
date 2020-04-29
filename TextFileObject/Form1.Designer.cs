@@ -44,19 +44,21 @@
             // 
             // addScoreButton
             // 
-            this.addScoreButton.Location = new System.Drawing.Point(225, 114);
+            this.addScoreButton.Location = new System.Drawing.Point(338, 178);
+            this.addScoreButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.addScoreButton.Name = "addScoreButton";
-            this.addScoreButton.Size = new System.Drawing.Size(154, 50);
+            this.addScoreButton.Size = new System.Drawing.Size(231, 78);
             this.addScoreButton.TabIndex = 18;
-            this.addScoreButton.Text = "Add Score";
+            this.addScoreButton.Text = "Search Book";
             this.addScoreButton.UseVisualStyleBackColor = true;
             this.addScoreButton.Click += new System.EventHandler(this.addScoreButton_Click);
             // 
             // sortScoresButton
             // 
-            this.sortScoresButton.Location = new System.Drawing.Point(225, 24);
+            this.sortScoresButton.Location = new System.Drawing.Point(338, 38);
+            this.sortScoresButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sortScoresButton.Name = "sortScoresButton";
-            this.sortScoresButton.Size = new System.Drawing.Size(154, 46);
+            this.sortScoresButton.Size = new System.Drawing.Size(231, 72);
             this.sortScoresButton.TabIndex = 17;
             this.sortScoresButton.Text = "Sort Scores";
             this.sortScoresButton.UseVisualStyleBackColor = true;
@@ -64,9 +66,10 @@
             // 
             // saveScoresButton
             // 
-            this.saveScoresButton.Location = new System.Drawing.Point(228, 470);
+            this.saveScoresButton.Location = new System.Drawing.Point(342, 734);
+            this.saveScoresButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.saveScoresButton.Name = "saveScoresButton";
-            this.saveScoresButton.Size = new System.Drawing.Size(154, 46);
+            this.saveScoresButton.Size = new System.Drawing.Size(231, 72);
             this.saveScoresButton.TabIndex = 16;
             this.saveScoresButton.Text = "Save and Close";
             this.saveScoresButton.UseVisualStyleBackColor = true;
@@ -74,9 +77,10 @@
             // 
             // loadScoresButton
             // 
-            this.loadScoresButton.Location = new System.Drawing.Point(36, 24);
+            this.loadScoresButton.Location = new System.Drawing.Point(54, 38);
+            this.loadScoresButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.loadScoresButton.Name = "loadScoresButton";
-            this.loadScoresButton.Size = new System.Drawing.Size(154, 46);
+            this.loadScoresButton.Size = new System.Drawing.Size(231, 72);
             this.loadScoresButton.TabIndex = 15;
             this.loadScoresButton.Text = "Load Scores";
             this.loadScoresButton.UseVisualStyleBackColor = true;
@@ -85,48 +89,54 @@
             // outputLabel
             // 
             this.outputLabel.BackColor = System.Drawing.Color.White;
-            this.outputLabel.Location = new System.Drawing.Point(36, 270);
+            this.outputLabel.Location = new System.Drawing.Point(54, 422);
+            this.outputLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(346, 173);
+            this.outputLabel.Size = new System.Drawing.Size(519, 270);
             this.outputLabel.TabIndex = 14;
             // 
             // nameInput
             // 
-            this.nameInput.Location = new System.Drawing.Point(91, 114);
+            this.nameInput.Location = new System.Drawing.Point(136, 178);
+            this.nameInput.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nameInput.Name = "nameInput";
-            this.nameInput.Size = new System.Drawing.Size(99, 22);
+            this.nameInput.Size = new System.Drawing.Size(146, 31);
             this.nameInput.TabIndex = 19;
             // 
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(36, 118);
+            this.nameLabel.Location = new System.Drawing.Point(54, 184);
+            this.nameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(49, 17);
+            this.nameLabel.Size = new System.Drawing.Size(63, 25);
             this.nameLabel.TabIndex = 20;
-            this.nameLabel.Text = "Name:";
+            this.nameLabel.Text = "Ref #";
             // 
             // scoreLabel
             // 
             this.scoreLabel.AutoSize = true;
-            this.scoreLabel.Location = new System.Drawing.Point(36, 146);
+            this.scoreLabel.Location = new System.Drawing.Point(54, 228);
+            this.scoreLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.scoreLabel.Name = "scoreLabel";
-            this.scoreLabel.Size = new System.Drawing.Size(49, 17);
+            this.scoreLabel.Size = new System.Drawing.Size(73, 25);
             this.scoreLabel.TabIndex = 22;
-            this.scoreLabel.Text = "Score:";
+            this.scoreLabel.Text = "Binary";
             // 
             // scoreInput
             // 
-            this.scoreInput.Location = new System.Drawing.Point(91, 142);
+            this.scoreInput.Location = new System.Drawing.Point(136, 222);
+            this.scoreInput.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.scoreInput.Name = "scoreInput";
-            this.scoreInput.Size = new System.Drawing.Size(99, 22);
+            this.scoreInput.Size = new System.Drawing.Size(146, 31);
             this.scoreInput.TabIndex = 21;
             // 
             // removeButton
             // 
-            this.removeButton.Location = new System.Drawing.Point(225, 198);
+            this.removeButton.Location = new System.Drawing.Point(338, 309);
+            this.removeButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.removeButton.Name = "removeButton";
-            this.removeButton.Size = new System.Drawing.Size(154, 50);
+            this.removeButton.Size = new System.Drawing.Size(231, 78);
             this.removeButton.TabIndex = 23;
             this.removeButton.Text = "Remove Score";
             this.removeButton.UseVisualStyleBackColor = true;
@@ -135,24 +145,27 @@
             // name2Label
             // 
             this.name2Label.AutoSize = true;
-            this.name2Label.Location = new System.Drawing.Point(36, 202);
+            this.name2Label.Location = new System.Drawing.Point(54, 316);
+            this.name2Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name2Label.Name = "name2Label";
-            this.name2Label.Size = new System.Drawing.Size(49, 17);
+            this.name2Label.Size = new System.Drawing.Size(72, 25);
             this.name2Label.TabIndex = 25;
-            this.name2Label.Text = "Name:";
+            this.name2Label.Text = "Linear";
             // 
             // nameRemove
             // 
-            this.nameRemove.Location = new System.Drawing.Point(91, 198);
+            this.nameRemove.Location = new System.Drawing.Point(136, 309);
+            this.nameRemove.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nameRemove.Name = "nameRemove";
-            this.nameRemove.Size = new System.Drawing.Size(99, 22);
+            this.nameRemove.Size = new System.Drawing.Size(146, 31);
             this.nameRemove.TabIndex = 24;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(419, 554);
+            this.ClientSize = new System.Drawing.Size(628, 866);
+            this.Controls.Add(this.outputLabel);
             this.Controls.Add(this.name2Label);
             this.Controls.Add(this.nameRemove);
             this.Controls.Add(this.removeButton);
@@ -164,7 +177,7 @@
             this.Controls.Add(this.sortScoresButton);
             this.Controls.Add(this.saveScoresButton);
             this.Controls.Add(this.loadScoresButton);
-            this.Controls.Add(this.outputLabel);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
