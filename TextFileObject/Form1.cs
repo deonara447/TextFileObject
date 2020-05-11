@@ -68,12 +68,14 @@ namespace TextFileObject
 
         private void addScoreButton_Click(object sender, EventArgs e)
         {
+            int low = 0;
+            int high = scores.Count - 1;
             try
             {
                 scores = scores.OrderBy(x => x.score).ToList();
                 int reference = Convert.ToInt32(nameInput.Text);
                 string found1 = LinearSearch(scores, reference);
-                string found2 = BinarySearch(scores, reference);
+                string found2 = BinarySearchRecursive(scores, low, high, reference);
                 scoreInput.Text = found2;
                 nameRemove.Text = found1;
             }
@@ -144,28 +146,60 @@ namespace TextFileObject
             }
             return "not found";
         }
-        public string BinarySearch(List<HighScore> searchList, int searchValue)
-        {
-            int low = 0;
-            int high = searchList.Count - 1;
+        //public string BinarySearch(List<HighScore> searchList, int searchValue)
+        //{
+        //    int low = 0;
+        //    int high = searchList.Count - 1;
 
-            while (high >= low)
+        //    while (high >= low)
+        //    {
+        //        int middle = (low + high);
+        //     if (searchList[middle].score == searchValue)
+        //        {
+        //            return searchList[middle].name;
+        //        }
+        //        else if (searchList[middle].score < searchValue)
+        //        {
+        //            low = middle + 1;
+        //        }
+        //        else
+        //        {
+        //            high = middle - 1;
+        //        }
+        //    }
+        //    return "not found";
+        //}
+        public string BinarySearchRecursive(List<HighScore> searchList, int left, int right,
+        int searchValue)
+
+        {
+            if (left > right)
             {
-                int middle = (low + high);
-             if (searchList[middle].score == searchValue)
-                {
-                    return searchList[middle].name;
-                }
-                else if (searchList[middle].score < searchValue)
-                {
-                    low = middle + 1;
-                }
-                else
-                {
-                    high = middle - 1;
-                }
+                return "not found";
             }
-            return "not found";
+
+            int middle = (left + right) / 2;
+
+            int compare = searchList[middle].score.CompareTo(searchValue);
+
+            if (compare == 0)
+            {
+                return searchList[middle].name;
+            }
+
+            if (compare < 0)
+            {
+                return BinarySearchRecursive(searchList, middle + 1, right, searchValue);
+            }
+            else
+            {
+                return BinarySearchRecursive(searchList, left, middle - 1, searchValue);
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
